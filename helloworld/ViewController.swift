@@ -7,14 +7,18 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    @IBAction func showmessage(){
+        let alertController = UIAlertController(title: "welcome to my app" ,message:"hello world" ,preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        present(alertController, animated: true, completion: nil)
+    }
 
 }
 
